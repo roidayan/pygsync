@@ -1,0 +1,1 @@
+{'username': u'roi.dayan', 'max_results': 50, 'default_ap': 3, 'proxy': u'192.118.11.56:8080', 'sync_backwards': 30, 'password': None, 'proxy_ap': 3, 'sync_fullday': u'Event', 's

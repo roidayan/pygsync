@@ -1,0 +1,16 @@
+
+def char2bin(char):
+    return ''.join(str( ( ord(char) >> i ) & 1 ) for i in xrange(7, -1, -1))
+
+def str2bin(string):
+    return '\n'.join(char2bin(char) for char in string)
+
+def bits2char(charbits):
+    num = 0
+    for index, bit in enumerate(charbits):
+        num |= int(bit) << 7-index
+    return chr(num)
+
+def bits2string(bitstr):
+    bytes = bitstr.split('\n')
+    return ''.join(bits2char(byte) for byte in bytes)
